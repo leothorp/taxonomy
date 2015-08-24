@@ -39,7 +39,10 @@ describe('ForagerBee class functionality', function() {
   it('should have a `treasureChest` property that is set to an empty array `[]`', function() {
     expect(foragerBee.treasureChest).to.be.a('array');
   });
-
+  
+  it('should have an `forage` method ', function() {
+    expect(foragerBee.forage).to.be.a('function');
+  });
   it('should have a `forage` method that allows the bee to add a `treasure` to the `treasureChest`', function() {
     foragerBee.forage('pollen');
     foragerBee.forage('flowers');
